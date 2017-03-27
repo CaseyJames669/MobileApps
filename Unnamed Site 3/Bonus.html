@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>JavaScript Bonus</title>
+<script language=javascript type="text/javascript">
+function newPage(someURL)
+{
+	window.open(someURL)
+}
+</script>
+</head>
+<body>
+
+<form action="" name="myForm">
+First Name: <input type="TEXT" name="firstName" id="firstName" value="First Name" onFocus="this.select()"/>
+</form>
+<form action="" name="myForm">
+Last Name: <input type="TEXT" name="lastName" id="lastName" value="Last Name" onFocus="this.select()"/>
+</form>
+
+Select your Major: <form action="dummy" method ="post">
+<select name="choice" size="1" onhange="jump(this.form)">
+<option value="biology">Biology</option>
+<option value="math">Math</option>
+<option value="music">Music</option>
+<option value="art">Art</option>
+</select>
+</form>
+
+Software Experience: <form>
+<input type="checkbox" name="checkgroup" title="Microsoft Office" id="microsoftOffice"/>Microsoft Office
+<input type="checkbox" name="checkgroup" title="wikis" id="wikis"/>Wikis
+<input type="checkbox" name="checkgroup" title="podcasts" id="podcasts"/>Podcasts
+<input type="checkbox" name="checkgroup" title="PhotoShop" id="photoShop"/>PhotoShop
+</form>
+
+<script>
+var printPageURL = "file:///C:/Users/Casey/Documents/Dropbox/MSUM%20Spring%20'13/Mobile%20Apps/Unnamed%20Site%203/newPage.html"
+</script>
+<button type="button">Print User Data</button>
+<form>
+<input type="button" onClick="newPage(printPageURL)" value="Continue to Quiz"></button>
+</form>
+
+<textarea rows="6" cols="50">
+firstName
+lastName
+major
+softwareExp
+</textarea>
+
+</body>
+</html>
